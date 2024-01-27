@@ -229,8 +229,6 @@ p {
    padding-right: 50px;
 }
 
-.speaking .grid__item-title {}
-
 .speaking .grid__item-text {
    margin-bottom: 30px;
    max-width: 360px;
@@ -284,6 +282,7 @@ p {
 
 .listening .grid__item-picture {
    order: 1;
+   padding-top: 30px;
 }
 
 .listening .grid__item-title {
@@ -324,3 +323,44 @@ p {
 }
 
 /* Finish coding styles for section with grid */
+
+/* Start coding section about */
+.about__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.about__content-title {
+   margin-bottom: 23px;
+}
+
+.about__content-text {
+   padding-bottom: 40px;
+   max-width: 600px;
+}
+
+.about__container-data {
+   display: flex;
+}
+
+.about__data-item {
+   margin-right: 163px;
+   text-align: center;
+}
+
+.about__data-number {
+   color: var(--main__color);
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 80px;
+}
+
+.about__data-text {
+   color: var(--text__color);
+   font-size: 20px;
+   font-weight: 400;
+}
+
+/* Finish coding section about */
+
+/*  */
