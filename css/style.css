@@ -40,6 +40,7 @@ p {
    --text__color: #8F95A5;
    --black__color: #000;
    --white__color: #fff;
+   --grid__background-color: #F5F5F5;
 }
 
 .text-h2 {
@@ -185,3 +186,141 @@ p {
 }
 
 /* Finish coding styles for section with woman */
+
+/* Start coding styles for section with grid */
+.grid__h2 {
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 96px;
+}
+
+/* Grid */
+.grid__container {
+   width: 100%;
+}
+
+.grid__container-whole {
+   display: grid;
+   gap: 18px;
+   grid-template-areas:
+      "one two three"
+      "one four four";
+   justify-content: space-evenly;
+   align-items: stretch;
+   margin-bottom: 250px;
+}
+
+.grid__container-item {
+   background-color: var(--grid__background-color);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-left: 43px;
+}
+
+/* Setting up speaking */
+.speaking {
+   grid-area: one;
+}
+
+.speaking .grid__item-picture {
+   padding-left: 20px;
+   padding-right: 50px;
+}
+
+.speaking .grid__item-title {}
+
+.speaking .grid__item-text {
+   margin-bottom: 30px;
+   max-width: 360px;
+}
+
+.speaking .grid__item-text-2 {
+   max-width: 360px;
+}
+
+.speaking .grid__item-button {
+   padding-bottom: 92px;
+   padding-top: 36px;
+}
+
+/* Setting up writing */
+.writing {
+   grid-area: two;
+   padding-bottom: 44px;
+}
+
+.writing .grid__item-picture {
+   text-align: end;
+}
+
+.writing .grid__item-text {
+   padding-bottom: 33px;
+   max-width: 360px;
+}
+
+/* Setting up reading */
+.reading {
+   grid-area: three;
+   padding-bottom: 44px;
+}
+
+.reading .grid__item-picture {
+   text-align: startx;
+}
+
+.reading .grid__item-text {
+   padding-bottom: 33px;
+   max-width: 360px;
+}
+
+/* Setting up listening */
+.listening {
+   grid-area: four;
+   flex-direction: row;
+   padding-bottom: 68px;
+}
+
+.listening .grid__item-picture {
+   order: 1;
+}
+
+.listening .grid__item-title {
+   margin-top: 43px;
+}
+
+.listening .grid__item-text {
+   padding-bottom: 25px;
+}
+
+.grid__item-title {
+   color: var(--main__color);
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 80px;
+   margin-bottom: 5px;
+}
+
+.grid__item-text,
+.grid__item-text-2 {
+   color: var(--text__color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.grid__item-button button {
+   width: 230px;
+   height: 60px;
+   border-radius: 5px;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: normal;
+}
+
+.grid__item-button button:hover {
+   transition: .1s all;
+}
+
+/* Finish coding styles for section with grid */
