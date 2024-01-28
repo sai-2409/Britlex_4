@@ -487,3 +487,36 @@ p {
 }
 
 /* Finish coding styles for section with input */
+
+/* Start coding styles for footer of a website */
+.footer {
+   margin-top: 133px;
+   padding-bottom: 40px;
+}
+
+.footer__container-line {
+   margin-bottom: 31px;
+}
+
+.footer__content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__content-right {
+   display: flex;
+}
+
+.footer__content-right a {
+   text-decoration: none;
+   margin-left: 10px;
+   color: var(--text__color);
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.footer__content-right a:hover {
+   opacity: 80%;
+}
+
+/* Finish coding styles for footer of a website */
