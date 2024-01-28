@@ -442,3 +442,48 @@ p {
 }
 
 /* Finish coding style for section price */
+
+/* Start coding styles for section with input */
+.input__content {
+   display: flex;
+   align-items: start;
+}
+
+.input__content img {
+   margin-right: 111px;
+}
+
+.input__content-right-title {
+   margin-bottom: 33px;
+}
+
+.input__content-right-text {
+   margin-bottom: 52px;
+}
+
+.input__content-right-sub {
+   display: flex;
+}
+
+.input__content-right-sub-input {
+   width: 450px;
+   height: 80px;
+   border-radius: 10px;
+   border: 2px solid var(--text__color);
+   padding: 26px 0 30px 30px;
+   color: var(--text__color);
+   font-size: 16px;
+   font-weight: 400;
+   margin-right: 12px;
+}
+
+.input__content-right-sub-button button {
+   width: 264px;
+   height: 80px;
+   color: var(--white__color);
+   font-size: 20px;
+   font-weight: 500;
+   border-radius: 10px;
+}
+
+/* Finish coding styles for section with input */
