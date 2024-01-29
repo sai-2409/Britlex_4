@@ -520,3 +520,20 @@ p {
 }
 
 /* Finish coding styles for footer of a website */
+
+/* Start optimizing website for 992 px screens */
+@media screen and(max-width: 992px) {
+   .common__container {
+      max-width: 900px;
+      margin: 0 auto;
+   }
+
+   .common__container-line {
+      width: 800px;
+      height: 1px;
+   }
+
+   .header__container-list li:last-child {
+      margin-right: 100px;
+   }
+}
