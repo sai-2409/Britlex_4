@@ -274,6 +274,8 @@ p {
    flex-direction: column;
    justify-content: space-between;
    padding-left: 43px;
+   box-shadow: 28px 28px 100px #878787,
+      -28px -28px 100px #ffffff;
 }
 
 /* Setting up speaking */
