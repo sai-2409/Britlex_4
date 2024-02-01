@@ -274,8 +274,8 @@ p {
    flex-direction: column;
    justify-content: space-between;
    padding-left: 43px;
-   box-shadow: 28px 28px 100px #878787,
-      -28px -28px 100px #ffffff;
+   box-shadow: 20px 20px 100px #bdbdbd,
+      -20px -20px 100px #ffffff;
 }
 
 /* Setting up speaking */
@@ -595,4 +595,31 @@ p {
    .header__container-list li:last-child {
       margin-right: 100px;
    }
+
+   .grid__container-whole {
+      gap: 13px;
+   }
 }
+
+/* Finish optimizing website for 992 px screen */
+
+/* Start coding optimize website for 575 px screen */
+@media screen and (max-width: 575px) {
+   .common__container {
+      max-width: 500px;
+      margin: 0 auto;
+   }
+
+   .common__container-line {
+      width: 500px;
+      height: 1px;
+   }
+
+   .grid__container-whole {
+      grid-template-areas:
+         "one" "two"
+         "three" "four";
+   }
+}
+
+/* Finish coding optimize website for 575 px screen */
