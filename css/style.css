@@ -1,6 +1,7 @@
 /* Commont settings to start work */
 html {
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 *,
@@ -97,7 +98,7 @@ p {
    width: 140px;
    height: auto;
    float: left;
-   transition: .5s linear;
+   transition: .2s linear;
    text-align: center;
    position: relative;
    display: block;
@@ -106,6 +107,7 @@ p {
    margin: 0 5px;
    background: transparent;
    font-weight: 900;
+   cursor: pointer;
 }
 
 .header__container-list li:before {
@@ -134,24 +136,25 @@ p {
    transform: translateX(-100%);
 }
 
+
 .header__container-list li:hover {
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/*
 .header__container-list li:hover:before {
    border-color: #262626;
    height: 100%;
    transform: translateX(0);
    transition: .3s transform linear, .3s height linear .3s;
 }
-
 .header__container-list li:hover:after {
    border-color: #262626;
    height: 100%;
    transform: translateX(0);
    transition: .3s transform linear, .3s height linear .5s;
 }
-
+*/
 .header__container-list li .header__container-list li:last-child {
    margin-right: 245px;
 }
@@ -485,6 +488,11 @@ p {
    height: 45px;
    padding-left: 18px;
    padding-right: 24px;
+   cursor: pointer;
+}
+
+.price__css-sale:hover {
+   opacity: 60%;
 }
 
 .price__css-sale-number {
