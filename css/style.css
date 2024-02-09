@@ -81,6 +81,8 @@ p {
 }
 
 .header__container {
+   max-width: 1500px;
+   margin: 0 auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -93,8 +95,8 @@ p {
 }
 
 .header__container-list li {
-   /*list-style-type: none;
-   margin-right: 39px;*/
+   list-style-type: none;
+   margin-right: 39px;
    width: 140px;
    height: auto;
    float: left;
@@ -187,7 +189,7 @@ p {
 
 .common__container-line {
    background-color: var(--main__color);
-   width: 1500px;
+   width: 100%;
    height: 1px;
 }
 
@@ -256,6 +258,7 @@ p {
 
 /* Grid */
 .grid__container {
+   margin: 0 auto;
    width: 100%;
 }
 
@@ -514,10 +517,12 @@ p {
 .input__content {
    display: flex;
    align-items: start;
+   justify-content: space-between;
 }
 
 .input__content img {
-   margin-right: 111px;
+   width: 477px;
+   height: 429px;
 }
 
 .input__content-right-title {
@@ -526,6 +531,7 @@ p {
 
 .input__content-right-text {
    margin-bottom: 52px;
+   max-width: 770px;
 }
 
 .input__content-right-sub {
@@ -588,39 +594,380 @@ p {
 
 /* Finish coding styles for footer of a website */
 
-/* Start optimizing website for 992 px screens */
-@media screen and(max-width: 992px) {
+/* Start making responsive for 1500 px screens */
+@media screen and (max-width: 1550px) {
+   html {
+      padding-right: 20px;
+      padding-left: 20px;
+   }
+
    .common__container {
-      max-width: 900px;
+      max-width: 1500px;
+   }
+
+   .header__container-list li a {
+      font-size: 18px;
+   }
+}
+
+/* Start making responsive for 1500 px screens */
+
+/* Start making responsive for 1400 px screens */
+@media screen and (max-width: 1400px) {
+
+   .common__container {
+      max-width: 1350px;
+      margin: 20px auto;
+   }
+
+   .header__container-list {
+      margin-left: 50px;
+   }
+
+   .header__container-list li {
+      margin-right: 30px;
+   }
+
+   .header__container-list li a {
+      font-size: 17px;
+   }
+
+   .header__container-button button {
+      width: 180px;
+      height: 60px;
+      font-size: 20px;
+   }
+
+   .woman__container-img {
+      width: 540px;
+      height: 540px;
+   }
+}
+
+/* Start making responsive for 1400 px screens */
+
+/* Start optimizing website for 1200 px */
+@media screen and (max-width: 1200px) {
+
+   .common__container {
+      max-width: 1150px;
       margin: 0 auto;
    }
 
-   .common__container-line {
-      width: 800px;
-      height: 1px;
+}
+
+/* Finish optimizing website for 1200 px */
+
+/* Start optimizing website for 1100 px */
+@media screen and (max-width: 1100px) {
+   .common__container {
+      max-width: 1050px;
+      margin: 0 auto;
    }
 
-   .header__container-list li:last-child {
-      margin-right: 100px;
+   .header__container-list {
+      margin-left: 10px;
+   }
+
+   .header__container-list li {
+      width: 100px;
+   }
+
+   .header__container-list li a {
+      font-size: 14px;
+   }
+
+   .header__container-list a {
+      font-size: 16px;
+      line-height: 24px;
+   }
+
+   .header__container-button button {
+      width: 140px;
+      height: 50px;
+   }
+}
+
+/* Finish optimizing website for 1320 px */
+
+/* Start optimizing website for 992 px screens */
+@media screen and (max-width: 992px) {
+
+   .common__container {
+      max-width: 980px;
+      margin: 0 auto;
+   }
+
+   .text-h2 {
+      font-size: 36px;
+   }
+
+   .text-p {
+      font-size: 16px;
+   }
+
+   .header__container {
+      max-width: 930px;
+      margin: 0 auto;
+   }
+
+   .header__container-list li a {
+      font-size: 16px;
+   }
+
+   .header__container-button button {
+      width: 160px;
+      height: 50px;
+      font-size: 16px;
+   }
+
+   .woman__container-mini-title {
+      font-size: 48px;
+   }
+
+   .woman__container-mini img {
+      width: 58px;
+      height: 58px;
+   }
+
+   .woman__container-left-text {
+      font-size: 18px;
+   }
+
+   .woman__container-left-button {
+      width: 292px;
+      height: 80px;
+      font-size: 24px;
+   }
+
+   .woman__container-img {
+      width: 440px;
+      height: 440px;
+
    }
 
    .grid__container-whole {
       gap: 13px;
    }
+
+   .grid__item-title {
+      font-size: 22px;
+   }
+
+   .grid__item-text,
+   .grid__item-text-2 {
+      font-size: 14px;
+   }
+
+   .grid__item-button button {
+      width: 196px;
+      height: 57px;
+   }
+
+   .about__data-number {
+      font-size: 30px;
+   }
+
+   .about__container-picture {
+      width: 336px;
+      height: 336px;
+   }
+
+   .pic-first {
+      width: 222px;
+      height: 222px;
+   }
+
+   .pic-second {
+      width: 267px;
+      height: 195px;
+   }
+
+   .pic-third {
+      width: 242px;
+      height: 242px;
+   }
+
+   .price__css-title {
+      font-size: 16px;
+   }
+
+   .price__css-sale-number {
+      font-size: 24px;
+   }
+
+   .price__css-sale-text {
+      font-size: 16px;
+   }
+
+   .input__content img {
+      width: 312px;
+      height: 281px;
+   }
+
+   .input__content-right-sub-input {
+      width: 323px;
+      height: 60px;
+      font-size: 14px;
+   }
+
+   .input__content-right-sub-button button {
+      width: 193px;
+      height: 60px;
+      font-size: 16px;
+   }
+
+   .footer__content-right a {
+      font-size: 16px;
+   }
 }
 
 /* Finish optimizing website for 992 px screen */
 
-/* Start coding optimize website for 575 px screen */
-@media screen and (max-width: 575px) {
+/* Start making optimize for 767 px screens */
+@media screen and (max-width: 767px) {
    .common__container {
-      max-width: 500px;
+      max-width: 720px;
       margin: 0 auto;
    }
 
-   .common__container-line {
-      width: 500px;
-      height: 1px;
+   .text-h2 {
+      font-size: 30px;
+   }
+
+   .text-p {
+      font-size: 14px;
+   }
+
+   .header__container {
+      max-width: 720px;
+      margin: 0 auto;
+   }
+
+   .header__container-list li a {
+      font-size: 16px;
+   }
+
+   .header__container-button button {
+      width: 160px;
+      height: 50px;
+      font-size: 16px;
+   }
+
+   .woman__container {
+      align-items: start;
+   }
+
+   .woman__container-mini-title {
+      font-size: 36px;
+   }
+
+   .woman__container-mini img {
+      width: 50px;
+      height: 50px;
+   }
+
+   .woman__container-left-text {
+      font-size: 16px;
+   }
+
+   .woman__container-left-button {
+      width: 236px;
+      height: 65px;
+      font-size: 18px;
+   }
+
+   .woman__container-img {
+      width: 352px;
+      height: 352px;
+
+   }
+
+   .grid__container-whole {
+      gap: 10px;
+   }
+
+   .grid__item-title {
+      font-size: 20px;
+   }
+
+   .grid__item-text,
+   .grid__item-text-2 {
+      font-size: 13px;
+   }
+
+   .grid__item-button button {
+      width: 178px;
+      height: 50px;
+   }
+
+   .about__data-number {
+      font-size: 30px;
+   }
+
+   .about__container-picture {
+      width: 295px;
+      height: 295px;
+   }
+
+   .pic-first {
+      width: 197px;
+      height: 197px;
+   }
+
+   .pic-second {
+      width: 219px;
+      height: 168px;
+   }
+
+   .pic-third {
+      width: 210px;
+      height: 210px;
+   }
+
+   .price__css-title {
+      font-size: 16px;
+   }
+
+   .price__css-sale-number {
+      font-size: 20px;
+   }
+
+   .price__css-sale-text {
+      font-size: 16px;
+   }
+
+   .input__content img {
+      width: 233px;
+      height: 210px;
+   }
+
+   .input__content-right-sub-input {
+      width: 283px;
+      height: 50px;
+      font-size: 12px;
+   }
+
+   .input__content-right-sub-button button {
+      width: 145px;
+      height: 50px;
+      font-size: 13px;
+   }
+
+   .footer__content-right a {
+      font-size: 13px;
+   }
+}
+
+/* Finish making optimize for 767 px screens */
+
+
+
+/* Start coding optimize website for 575 px screen */
+/*@media screen and (max-width: 575px) {
+   .common__container {
+      max-width: 500px;
+      margin: 0 auto;
    }
 
    .grid__container-whole {
@@ -629,5 +976,4 @@ p {
          "three" "four";
    }
 }
-
 /* Finish coding optimize website for 575 px screen */
